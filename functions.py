@@ -7,6 +7,7 @@ def reverse_list(lst):
     :return: A list with elements in reverse order.
     """
     pass  # Implement this
+    return lst[::-1]
 
 def count_occurrences(lst, element):
     """
@@ -16,6 +17,7 @@ def count_occurrences(lst, element):
     :return: Integer count of occurrences.
     """
     pass  # Implement this
+    return lst.count(element)
 
 def get_keys_with_value(dct, value):
     """
@@ -25,7 +27,7 @@ def get_keys_with_value(dct, value):
     :return: List of keys.
     """
     pass  # Implement this
-
+    
 def merge_sorted_lists(lst1, lst2):
     """
     Merges two sorted lists into one sorted list.
@@ -34,7 +36,8 @@ def merge_sorted_lists(lst1, lst2):
     :return: Merged sorted list.
     """
     pass  # Implement this
-
+    lst3 = lst1 + lst2
+    return sorted(lst3)
 def find_second_largest(numbers):
     """
     Finds the second largest number in a list.
@@ -42,6 +45,7 @@ def find_second_largest(numbers):
     :return: The second largest integer.
     """
     pass  # Implement this
+    
 
 def is_anagram(str1, str2):
     """
@@ -56,7 +60,11 @@ def is_anagram(str1, str2):
     :return: True if the strings are anagrams, False otherwise.
     """
     pass  # Implement this
-
+    for i in str1:
+        if i in str2:
+            return True
+        else:
+            return False
 
 def flatten_list(nested_list):
     """
@@ -65,8 +73,6 @@ def flatten_list(nested_list):
     :return: A flat list with all elements.
     """
     pass  # Implement this
-
-
 def remove_duplicates(lst):
     """
     Removes duplicates from the list while maintaining order.
@@ -74,6 +80,7 @@ def remove_duplicates(lst):
     :return: List without duplicates.
     """
     pass  # Implement this
+    
 
 def find_common_elements(lst1, lst2):
     """
@@ -83,3 +90,8 @@ def find_common_elements(lst1, lst2):
     :return: List of common elements.
     """
     pass  # Implement this
+    common = []
+    for i in lst1:
+        if i in lst2:
+            common.append(i)
+    return common
