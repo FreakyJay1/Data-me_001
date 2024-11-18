@@ -80,7 +80,12 @@ def remove_duplicates(lst):
     :return: List without duplicates.
     """
     pass  # Implement this
-    
+    for i in lst:
+        if lst.count(i) >= 2:
+            lst.pop(i)
+        else:
+            continue
+    return lst
 
 def find_common_elements(lst1, lst2):
     """
